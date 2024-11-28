@@ -1,10 +1,17 @@
-{% extends "core/base.html" %}
-
-{% block title %}
-    Página Inicial
-{% endblock %}
-
-{% block content %}
-    <h2>Bem-vindo ao Meu Blog!</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Blog</h1>
     <p>Esta é a página inicial.</p>
-{% endblock %}
+    
+    <!-- Botão para a página de comentários -->
+    <a href="{% url 'comment' %}">
+        <button>Ir para Comentários</button>
+    </a>
+</body>
+</html>
